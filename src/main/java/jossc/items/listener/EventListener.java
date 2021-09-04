@@ -4,6 +4,7 @@ import cn.nukkit.Player;
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.player.PlayerItemHeldEvent;
+import cn.nukkit.event.player.PlayerQuitEvent;
 import jossc.items.Main;
 import jossc.items.storage.SessionsStorage;
 import jossc.items.utils.Utils;
@@ -22,6 +23,15 @@ public class EventListener implements Listener {
 
     if (storage.contains(player)) {
       Utils.sendItemInformation(player, event.getItem());
+    }
+  }
+
+  @EventHandler
+  public void onQuit(PlayerQuitEvent event) {
+    Player player = event.getPlayer();
+
+    if (storage.contains(player)) {
+      storage.remove(player);
     }
   }
 }
