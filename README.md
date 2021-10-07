@@ -1,5 +1,9 @@
 # Items ID
 
+> Show the id of the items in your NukkitX server
+
+
+
 If you encounter any bugs, have suggestions or questions, [create an issue](https://github.com/Josscoder/ItemsID/issues/new).
 
 ## Setup
