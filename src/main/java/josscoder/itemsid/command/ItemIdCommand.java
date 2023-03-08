@@ -28,7 +28,7 @@ public class ItemIdCommand extends Command {
 
         if (args.length < 1) {
             Item item = player.getInventory().getItemInHand();
-            player.sendActionBar(TextFormat.colorize(String.format("&6%s\n&r&7%s:%s", item.getName(), item.getId(), item.getDamage())));
+            player.sendPopup(TextFormat.colorize(String.format("&6%s\n&r&7%s:%s", item.getName(), item.getId(), item.getDamage())));
 
             return true;
         }

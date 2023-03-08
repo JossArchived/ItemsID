@@ -24,6 +24,6 @@ public class GeneralListener implements Listener {
             return;
         }
 
-        player.sendActionBar(TextFormat.colorize(String.format("&9%s\n&r&7%s:%s", item.getName(), item.getId(), item.getDamage())));
+        player.sendPopup(TextFormat.colorize(String.format("&9%s\n&r&7%s:%s", item.getName(), item.getId(), item.getDamage())));
     }
 }
