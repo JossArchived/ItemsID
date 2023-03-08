@@ -1,5 +1,5 @@
 name: ItemsID
-main: jossc.items.Main
+main: josscoder.itemsid.ItemsIDPlugin
 api: 1.0.0
-version: 1.0.0
+version: ${project.version}
 author: Josscoder
